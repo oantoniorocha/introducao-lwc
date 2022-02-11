@@ -1,0 +1,37 @@
+<template>
+	<lightning-card>
+		<!-- essa classe afasta o testo da borda-->
+		<!-- if:true -> se o true estiver declarado na variável visible, a div aparece-->
+		<div class="slds-m-around_medium" if:true={visible}>
+			<!-- essa classe dá o tamanho do h1 padrão do Sales-->
+			<h1 class="slds-text-heading_large">Trazer dados da Classe</h1>
+			<br>
+			<!--para pegar a variável do JS {nomeDaVariável}-->
+			<p> Nome: {nome}</p>
+			<p> Telefone: {telefone}</p>
+			<p> CPF: {cpf}</p>
+			<p> Idade: {idade}</p>
+
+		</div>
+
+		<div class="slds-m-around_medium" if:false={visible}>
+			<h1 class="slds-text-heading_large">Outras Informações</h1><br>
+
+			<p> Email: {email}</p>
+			<p>Instagram: <a href={insta} target="_blank">clique aqui.</a>
+			</p>
+			<p>LinkedIn: <a href={linkedin} target="_blank">ir para o LinkedIn</a>
+			</p>
+			<br>
+
+		</div>
+		<lightning-button variant="brand" label="Next" title="Primary action" onclick={trocardiv}
+			class="slds-m-left_x-small"></lightning-button>
+
+		<lightning-button variant="brand" label="trocar cliente" title="Primary action" onclick={alterarValores}
+			class="slds-m-left_x-small"></lightning-button>
+
+
+
+	</lightning-card>
+</template>

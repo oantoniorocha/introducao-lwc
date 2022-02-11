@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/oantoniorocha.introducao-lwc",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve vcIAJOwLlffki0NLoXs0 --open"
+  }
+}
